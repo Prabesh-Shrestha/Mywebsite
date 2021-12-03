@@ -1,0 +1,40 @@
+.buttonnum{
+
+    width: 10%;
+    height: 18%;
+    color: black;
+    background-color: rgb(59, 59, 59);
+    border-color:  rgb(170, 170, 170);
+    font-size: xx-large;
+
+}
+
+.buttonnum:hover{
+    background-color: rgb(129, 129, 129);
+}   
+.reset{
+    width: 15%;
+    height: 15%;
+    font-size: 300%;
+    color: bisque;
+    background-color: red;
+    border-color: red;
+
+}
+.reset:hover{
+    background-color: rgb(255, 55, 55);
+    border-color: rgb(255, 55, 55);
+}
+html{
+    background-color: rgb(170, 170, 170);
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 84, 136);
+}
+.credit{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+
+}

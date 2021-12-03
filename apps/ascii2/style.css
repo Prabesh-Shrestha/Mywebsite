@@ -1,0 +1,42 @@
+body{
+background-color:aquamarine;
+
+}
+
+#topic{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 84, 136);
+    font-size: 80px;
+    text-align: center;
+}
+#encryptiondiv{
+    border-radius: 25px;
+    border: 5px solid rgb(0, 181, 187);
+    background: rgb(0, 212, 219);
+    padding: 20px;
+    width: 400px;
+    height: 150px;
+}
+#decryptiondiv{
+    
+    border-radius: 25px;
+    border: 5px solid rgb(0, 181, 187);
+    background: rgb(0, 212, 219);
+    padding: 20px;
+    width: 400px;
+    height: 150px;
+    }
+input {
+
+    width: 375px;
+    height: 25px;
+
+}
+
+#credit{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    text-align: center;
+
+}

@@ -1,0 +1,18 @@
+.active {
+    background-color: #33daf0;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 195, 255); 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(37, 137, 184); 
+  }

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII2</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <script src="script.js"></script>
+    <p id="topic">ASCII converter</p>
+        
+<center>
+    <div id="encryptiondiv">
+        
+        <form onsubmit="StartEncrypter(); return false;">
+            <label>Your Message</label><br>
+            <input type="text" id="tobeencrypted" required />
+        </form>
+
+        <button onclick="StartEncrypter() ">Start Encryption</button>
+        <p>Output:</p>
+        <p id = "encryptedvalue"></p>
+        
+    </div>
+
+    <div id="decryptiondiv">
+
+        <form onsubmit="StartDecrypter(); return false;">
+            <label>Encrypted Message</label><br>
+            <input type="text" id="tobedecrypted" required />
+        </form>
+
+        <button onclick="StartDecrypter() ">Start Decryption</button>
+        <p>Output:</p>
+        <p id = "Decryptedvalue"></p>
+        
+    </div>
+</center>
+    <p id="credit">
+        Made by Prabesh Shrestha
+    </p>
+
+</body>
+</html>

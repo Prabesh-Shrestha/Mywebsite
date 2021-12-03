@@ -1,0 +1,43 @@
+html{
+    background-color: rgb(170, 170, 170);
+}
+
+#topic{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(0, 84, 136);
+    font-size: 80px;
+    text-align: center;
+}
+#start{
+
+    width: 15%;
+    height: 18%;
+    color: white;
+    background-color:rgb(0, 238, 0);
+    border-color:  rgb(0, 238, 0);
+    font-size:larger;
+
+}
+
+#start:hover{
+    background-color: rgb(0, 182, 0);
+} 
+#textbeforeanswer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(17, 0, 255);
+    font-size: 40px;
+
+}
+#answer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(17, 0, 255);
+    font-size: 40px;
+
+}
+#credit{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    text-align: center;
+
+}
