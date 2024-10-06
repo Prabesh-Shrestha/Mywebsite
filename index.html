@@ -1,0 +1,215 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/navbar.css" />
+		<link rel="stylesheet" href="styles/sections.css" />
+		<title>Prabesh Shrestha</title>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="logo">
+				<a href="#">Prabesh Shrestha</a>
+				<!-- You can replace this with your logo or name -->
+			</div>
+			<ul class="nav-links">
+				<li><a href="#about">About</a></li>
+				<li><a href="#work">Work</a></li>
+				<li><a href="#project">project</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<!-- <li><a href="#blog">Blog</a></li> -->
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- About Me Section -->
+		<section id="about" class="about-section">
+			<h2>About Me</h2>
+			<div class="about-content">
+				<div>
+					<h1 class="name">I am Prabesh Shrestha</h1>
+					<p class="description">
+						A passionate builder and innovator in robotics. With a
+						strong background in electrical engineering, I create
+						advanced robotic systems and explore the exciting world
+						of quantum computing. I am dedicated to shaping the
+						future of technology and making a positive impact
+						through my work.
+					</p>
+				</div>
+				<div class="photo-slider">
+					<div class="slides">
+						<img
+							src="assets/image/pfp.jpeg"
+							alt="Your Name"
+							class="about-photo"
+						/>
+						<!-- <img
+							src="path_to_your_photo2.jpg"
+							alt="Your Name"
+							class="about-photo"
+						/>
+						<img
+							src="path_to_your_photo3.jpg"
+							alt="Your Name"
+							class="about-photo"
+						/> -->
+						<!-- Add more images as needed -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section id="project" class="projects-section">
+			<h2>Projects</h2>
+			<div class="projects-container">
+				<div class="project-item">
+					<h3>Project 1</h3>
+					<p>
+						Description of your first project. (e.g., "Developed a
+						robotic arm for precision tasks using Python and
+						Arduino.")
+					</p>
+				</div>
+				<div class="project-item">
+					<h3>Project 2</h3>
+					<p>
+						Description of your second project. (e.g., "Created a
+						mobile app for remote robot control with a user-friendly
+						interface.")
+					</p>
+				</div>
+				<div class="project-item">
+					<h3>Project 3</h3>
+					<p>
+						Description of your third project. (e.g., "Designed a
+						cluster robotics system for efficient task
+						distribution.")
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Resume Section -->
+		<section id="resume" class="resume-section">
+			<h2>Download Resume</h2>
+			<p>Click the button below to download my resume.</p>
+			<a
+				href="path/to/your/resume.pdf"
+				target="_blank"
+				class="download-button"
+				>Download Resume</a
+			>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact-section">
+			<h2>Contact Me</h2>
+			<p>Feel free to reach out via social media:</p>
+			<div class="social-links">
+				<a
+					href="https://github.com/prabesh-shrestha"
+					target="_blank"
+					class="social-link"
+				>
+					<img
+						src="assets/logos/github.svg"
+						alt="GitHub Logo"
+						class="social-logo"
+					/>
+					GitHub
+				</a>
+				<a
+					href="https://www.linkedin.com/in/prabesh-shrestha"
+					target="_blank"
+					class="social-link"
+				>
+					<img
+						src="assets/logos/linkedIn.svg"
+						alt="LinkedIn Logo"
+						class="social-logo"
+					/>
+					LinkedIn
+				</a>
+				<a
+					href="mailto:prabesh.sh3.14@gmail.com"
+					target="_blank"
+					class="social-link"
+				>
+					<img
+						src="assets/logos/mail.svg"
+						alt="Email Logo"
+						class="social-logo"
+					/>
+					Email
+				</a>
+				<a
+					href="https://www.facebook.com/your-facebook-handle"
+					target="_blank"
+					class="social-link"
+				>
+					<img
+						src="assets/logos/facebook.svg"
+						alt="Facebook Logo"
+						class="social-logo"
+					/>
+					Facebook
+				</a>
+				<a
+					href="https://www.instagram.com/your-instagram-handle"
+					target="_blank"
+					class="social-link"
+				>
+					<img
+						src="assets/logos/instagram.svg"
+						alt="Instagram Logo"
+						class="social-logo"
+					/>
+					Instagram
+				</a>
+			</div>
+		</section>
+
+		<!-- <section id="introduction"></section>
+    <section id="aboutme"></section>
+    <section id="contact"></section>
+
+    <section id="downloadresume"></section>
+    <section id="projects"></section> -->
+		<script>
+			let slideIndex = 0; // Initial slide index
+			showSlides(slideIndex); // Show the first slide
+
+			// Function to change the slide index and show the current slide
+			function changeSlide(n) {
+				showSlides((slideIndex += n)); // Change slide index
+			}
+
+			// Function to display the current slide
+			function showSlides(n) {
+				const slides = document.querySelectorAll(".about-photo");
+
+				if (n >= slides.length) {
+					slideIndex = 0; // Loop back to the first slide
+				}
+				if (n < 0) {
+					slideIndex = slides.length - 1; // Loop back to the last slide
+				}
+
+				// Hide all slides
+				slides.forEach((slide) => {
+					slide.style.display = "none";
+				});
+
+				// Show the current slide
+				slides[slideIndex].style.display = "block";
+			}
+
+			// Auto-slide functionality
+			setInterval(() => {
+				changeSlide(1); // Move to the next slide
+			}, 3000); // Change slide every 3 seconds (3000 milliseconds)
+		</script>
+	</body>
+</html>

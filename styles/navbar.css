@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --dark: #13222c;
+    --darkblue: #387478;
+    --blue: #629584;
+    --light: #e2f1e7;
+    --neon: #00ffcc;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Press Start 2P'; 
+    background-color: var(--dark);
+    color: var(--light);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background: var(--dark); /* Dark color with transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+  
+  .logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--light); /* Neon color */
+    text-decoration: none;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px var(--neon), 0 0 20px var(--neon), 0 0 30px var(--neon), 0 0 40px var(--neon);
+    }
+    to {
+      text-shadow: 0 0 20px var(--neon), 0 0 30px var(--neon), 0 0 40px var(--neon), 0 0 50px var(--neon);
+    }
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 1rem;
+    position: relative;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .nav-links a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--neon);
+    transition: 0.3s ease;
+  }
+  
+  .nav-links a:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  
+  .nav-links a:hover {
+    color: var(--neon);
+    transform: scale(1.05);
+  }
+  
+  .cta {
+    background-color: var(--neon);
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+  }
+  
+  .cta:hover {
+    background-color: var(--light);
+    color: var(--darkblue);
+    box-shadow: 0 4px 12px rgba(0, 255, 204, 0.8); /* Neon glow on hover */
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: var(--darkblue);
+      display: none;
+    }
+  
+    .navbar.active .nav-links {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  

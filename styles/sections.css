@@ -1,0 +1,218 @@
+html {
+    scroll-behavior: smooth; 
+}
+/* Contact Section */
+.contact-section {
+	background-color: var(--darkblue);
+	padding: 4rem 2rem;
+	text-align: center;
+}
+
+.contact-section h2 {
+	font-family: "Press Start 2P", cursive;
+	font-size: 1.8rem;
+	color: var(--light);
+	margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+	font-family: "Press Start 2P", cursive;
+	font-size: 1rem;
+	color: var(--light);
+	margin-bottom: 2rem;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.social-link {
+	display: flex;
+	align-items: center;
+	font-family: "Press Start 2P", cursive;
+	color: var(--light);
+	font-size: 0.9rem;
+	text-decoration: none;
+	padding: 0.8rem 1.5rem;
+	background: var(--dark);
+	border-radius: 8px;
+	transition: all 0.3s ease;
+}
+
+.social-link img.social-logo {
+	width: 24px;
+	height: 24px;
+	margin-right: 0.8rem; /* Space between logo and text */
+}
+
+.social-link:hover {
+	background-color: var(--blue); /* Subtle background change on hover */
+	color: var(--light);
+	transform: translateY(-4px); /* Subtle lift on hover */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
+
+@media (max-width: 768px) {
+	.social-links {
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+}
+/* General Font Settings */
+body {
+	font-family: "Arial", sans-serif; /* Change to a readable font */
+}
+/* About Me Section */
+.about-section {
+	background-color: var(--light);
+	padding: 4rem 1rem;
+	text-align: center;
+	border-bottom: 2px solid var(--darkblue);
+}
+
+.about-section h2 {
+	font-family: "Press Start 2P", cursive;
+	font-size: 2rem;
+	color: var(--dark);
+	margin-bottom: 1rem;
+}
+
+.about-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: auto;
+	/* max-width: 2200px;  */
+}
+
+.about-content p {
+	color: var(--dark);
+	font-size: 1.5rem;
+	width: 1150px;
+	padding-right: 60px;
+}
+
+.photo-slider {
+	position: relative; /* Relative positioning for the slider */
+	width: 500px; /* Set width for the slider */
+	height: 500px; /* Set height for the slider */
+	overflow: hidden; /* Hide overflow for sliding effect */
+	margin-bottom: 1.5rem; /* Space between the slider and description */
+}
+
+.slides {
+	display: flex; /* Arrange images in a row */
+	transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+}
+
+.about-photo {
+	width: 500px; /* Fixed width for images */
+	height: 500px; /* Fixed height for images */
+	object-fit: cover; /* Maintain aspect ratio */
+	/* padding-left: 100px; */
+}
+.about-me {
+	background-color: var(--light); /* Light background */
+	padding: 40px; /* Add some padding */
+	border-radius: 10px; /* Rounded corners */
+	text-align: center; /* Center text */
+	max-width: 800px; /* Limit width */
+	margin: auto; /* Center the section */
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.name {
+	font-size: 2.5rem; /* Larger font size */
+	color: var(--darkblue); /* Text color */
+	font-weight: bold; /* Bold text */
+	margin-bottom: 20px; /* Space below name */
+}
+
+.description {
+	font-size: 1.2rem; /* Slightly larger font for description */
+	color: var(--dark); /* Darker text color */
+	line-height: 1.6; /* Better line spacing */
+}
+
+/* Projects Section */
+.projects-section {
+	background-color: var(--darkblue);
+	padding: 4rem 2rem;
+	text-align: center;
+	color: var(--light);
+	border-bottom: 2px solid var(--light);
+}
+
+.projects-section h2 {
+	font-family: "Press Start 2P", cursive;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.projects-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.project-item {
+	background: var(--blue);
+	border-radius: 8px;
+	padding: 2rem;
+	width: 300px; /* Fixed width for project items */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+	font-family: "Press Start 2P", cursive;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.project-item p {
+	font-family: "Arial", sans-serif; /* Change to a readable font */
+	font-size: 1rem;
+}
+
+/* Resume Section */
+.resume-section {
+	background-color: var(--light);
+	padding: 4rem 2rem;
+	text-align: center;
+}
+
+.resume-section h2 {
+	font-family: "Press Start 2P", cursive;
+	font-size: 2rem;
+	color: var(--dark);
+	margin-bottom: 1rem;
+}
+
+.resume-section p {
+	font-family: "Arial", sans-serif; /* Change to a readable font */
+	font-size: 1.1rem;
+	color: var(--dark);
+	margin-bottom: 2rem;
+}
+
+.download-button {
+	display: inline-block;
+	padding: 0.8rem 1.5rem;
+	font-family: "Press Start 2P", cursive;
+	font-size: 1rem;
+	color: var(--light);
+	background: var(--dark);
+	border-radius: 8px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.download-button:hover {
+	background-color: var(--blue); /* Change background on hover */
+	transform: translateY(-4px); /* Lift effect on hover */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+}
