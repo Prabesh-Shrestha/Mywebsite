@@ -90,15 +90,15 @@ body {
 .about-content p {
 	color: var(--dark);
 	font-size: 1.5rem;
-	width: 1150px;
+	/* width: 1150px; */
 	padding-right: 60px;
 }
 
 .photo-slider {
 	position: relative; /* Relative positioning for the slider */
-	width: 500px; /* Set width for the slider */
+	/* width: 500px; Set width for the slider */
 	height: 500px; /* Set height for the slider */
-	overflow: hidden; /* Hide overflow for sliding effect */
+	/* overflow: hidden; Hide overflow for sliding effect */
 	margin-bottom: 1.5rem; /* Space between the slider and description */
 }
 
@@ -108,7 +108,7 @@ body {
 }
 
 .about-photo {
-	width: 500px; /* Fixed width for images */
+	/* width: 500px; Fixed width for images */
 	height: 500px; /* Fixed height for images */
 	object-fit: cover; /* Maintain aspect ratio */
 	/* padding-left: 100px; */
@@ -118,7 +118,7 @@ body {
 	padding: 40px; /* Add some padding */
 	border-radius: 10px; /* Rounded corners */
 	text-align: center; /* Center text */
-	max-width: 800px; /* Limit width */
+	/* max-width: 800px; Limit width */
 	margin: auto; /* Center the section */
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
