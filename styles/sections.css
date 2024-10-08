@@ -3,63 +3,77 @@ html {
 }
 /* Contact Section */
 .contact-section {
-	background-color: var(--darkblue);
-	padding: 4rem 2rem;
-	text-align: center;
+  background-color: var(--light); /* Light background */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--dark); /* Dark text for readability on light background */
 }
 
 .contact-section h2 {
-	font-family: "Press Start 2P", cursive;
-	font-size: 1.8rem;
-	color: var(--light);
-	margin-bottom: 1.5rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: var(--dark); /* Dark text for the heading */
+  margin-bottom: 1.5rem;
 }
 
 .contact-section p {
-	font-family: "Press Start 2P", cursive;
-	font-size: 1rem;
-	color: var(--light);
-	margin-bottom: 2rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  color: var(--dark); /* Dark text for paragraph */
+  margin-bottom: 2rem;
 }
 
+/* Social Links */
 .social-links {
-	display: flex;
-	justify-content: center;
-	gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows the links to wrap on smaller screens */
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
 .social-link {
-	display: flex;
-	align-items: center;
-	font-family: "Press Start 2P", cursive;
-	color: var(--light);
-	font-size: 0.9rem;
-	text-decoration: none;
-	padding: 0.8rem 1.5rem;
-	background: var(--dark);
-	border-radius: 8px;
-	transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Press Start 2P', cursive;
+  color: var(--dark); /* Dark text for contrast */
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background: var(--light); /* Light background for links */
+  border: 2px solid var(--darkblue);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-.social-link img.social-logo {
-	width: 24px;
-	height: 24px;
-	margin-right: 0.8rem; /* Space between logo and text */
+/* Social Logo Styling */
+.social-logo {
+  width: 24px; /* Set fixed width for the logos */
+  height: 24px; /* Set fixed height for the logos */
+  margin-right: 0.5rem; /* Space between the logo and text */
 }
 
+/* Hover Effect for Links */
 .social-link:hover {
-	background-color: var(--blue); /* Subtle background change on hover */
-	color: var(--light);
-	transform: translateY(-4px); /* Subtle lift on hover */
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  background-color: var(--blue); /* Light blue background on hover */
+  color: var(--light); /* Light text on hover */
+  transform: translateY(-4px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
 }
 
-@media (max-width: 768px) {
-	.social-links {
-		flex-direction: column;
-		gap: 1.5rem;
-	}
+.social-link:hover .social-logo {
+  filter: brightness(0) invert(1); /* Invert logo color on hover for contrast */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column; /* Stack social links on smaller screens */
+    gap: 1.5rem;
+  }
+}
+
 /* General Font Settings */
 body {
 	font-family: "Arial", sans-serif; /* Change to a readable font */
@@ -180,39 +194,84 @@ body {
 
 /* Resume Section */
 .resume-section {
-	background-color: var(--light);
-	padding: 4rem 2rem;
-	text-align: center;
+  background-color: var(--darkblue); /* Dark background */
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--light); /* Light text for readability */
 }
 
 .resume-section h2 {
-	font-family: "Press Start 2P", cursive;
-	font-size: 2rem;
-	color: var(--dark);
-	margin-bottom: 1rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  color: var(--light);
+  margin-bottom: 1rem;
 }
 
 .resume-section p {
-	font-family: "Arial", sans-serif; /* Change to a readable font */
-	font-size: 1.1rem;
-	color: var(--dark);
-	margin-bottom: 2rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  color: var(--light);
+  margin-bottom: 2rem;
 }
 
 .download-button {
-	display: inline-block;
-	padding: 0.8rem 1.5rem;
-	font-family: "Press Start 2P", cursive;
-	font-size: 1rem;
-	color: var(--light);
-	background: var(--dark);
-	border-radius: 8px;
-	text-decoration: none;
-	transition: all 0.3s ease;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: var(--darkblue);
+  background: var(--light); /* Light button to contrast with dark background */
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .download-button:hover {
-	background-color: var(--blue); /* Change background on hover */
-	transform: translateY(-4px); /* Lift effect on hover */
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  background-color: var(--blue); /* Hover color for button */
+  color: var(--light); /* Change text color on hover */
+  transform: translateY(-4px); /* Slight lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow */
 }
+
+/* Work Experience Section */
+.work-section {
+	background-color: var(--light);
+	padding: 4rem 2rem;
+	text-align: center;
+	border-bottom: 2px solid var(--darkblue);
+  }
+  
+  .work-section h2 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2rem;
+	color: var(--dark);
+	margin-bottom: 1.5rem;
+  }
+  
+  .work-container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	align-items: center;
+  }
+  
+  .work-item {
+	background: var(--blue);
+	border-radius: 8px;
+	padding: 1.5rem 2rem;
+	width: 100%;
+	max-width: 800px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-item h3 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  .work-item p {
+	font-family: 'Arial', sans-serif;
+	font-size: 1rem;
+	color: var(--dark);
+  }
