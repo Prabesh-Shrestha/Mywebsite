@@ -1,168 +1,322 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Prabesh Shrestha</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/unicons.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/tooplate-style.css">
-    <link rel="stylesheet" href="css/main.css">
-     </head>
-  <body>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Prabesh Shrestha — Electrical & Electronics Engineering student building robotics, embedded systems, sensing platforms, and connected machines." />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta property="og:title" content="Prabesh Shrestha — Engineer & Researcher" />
+  <meta property="og:description" content="Robotics, embedded systems, sensing, fabrication, and connected machines." />
+  <meta property="og:type" content="website" />
+  <title>Prabesh Shrestha — Engineer & Researcher</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (() => {
+      const saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.dataset.theme = saved;
+      else if (window.matchMedia('(prefers-color-scheme: light)').matches) document.documentElement.dataset.theme = 'light';
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><i class=''></i>Prabesh Shrestha</a>
+  <header class="site-header" id="top">
+    <div class="nav-wrap container">
+      <a class="brand" href="#top" aria-label="Prabesh Shrestha home">
+        <span class="brand-mark">PS</span>
+        <span class="brand-name">Prabesh Shrestha</span>
+      </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+      </nav>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link"><span data-hover="Home">Home</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#cert" class="nav-link"><span data-hover="Certificates">Certificates</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#social" class="nav-link"><span data-hover="Socials">Socials</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-                    </li>
-                </ul>
+      <div class="nav-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+        </button>
+        <a class="button button-small button-ghost desktop-resume" href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
 
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                        Color mode
-                      </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </header>
 
-<!-- HOME PAGE -->
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="home">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-                    <div class="about-text">
-                        <small class="small-text">Welcome to <span class="mobile-block">my website!</span></small>
-                        <h1 class="animated animated-text">
-                            <span class="mr-2">Hello there!</span><br>
-                                <span class="mr-2">I'm</span>
-                                <div class="animated-info">
-                                    <span class="animated-item">Prabesh Shrestha</span>
-                                    <span class="animated-item">Web Designer</span>
-                                    <span class="animated-item">Programmer</span>
-                                </div>
-                        </h1>
-
-                        <p>Just a guy who loves making things.</p>
-                        
-
-                    </div>
-                </div>
-
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="about-image svg">
-                        <img src="images/homepage.gif" class="img-fluid">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="project py-5" id="cert">
-        <div class="container">
-                
-                <div class="row">
-                  <div class="col-lg-11 text-center mx-auto col-12">
-
-                      <div class="col-lg-8 mx-auto">
-                        <h2>Some of my Certificates</h2>
-                      </div>
-
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/cert/cer1.jpeg" class="img-fluid">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/cert/space app.jpg" class="img-fluid">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/cert/yss.jpg" class="img-fluid">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/cert/python.jpg" class="img-fluid">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="images/cert/cer6.jpeg" class="img-fluid">
-                          </div>
-                        </div>
-                      </div>
-
-                  </div>
-                </div>
-        </div>
-    </section>
-    <section id="social">
-        <div class="socials">
-            <a href="https://www.facebook.com/prabesh.shrestha.7796"><img src="images/logo/facebook.jpg" height="100"></a>
-            <a href="https://github.com/Prabesh-Shrestha"><img src="images/logo/GitHub.png" height="100"></a>
-            <a href="https://www.linkedin.com/in/prabesh-shrestha-6aaa141b6/"><img src="images/logo/linkedin.jpg" height="100"></a>
-            <a href="https://devfolio.co/@PrabeshShrestha"><img src="images/logo/devfolio.png" height="100"></a>
-            <a href="https://www.instagram.com/prabesh.sh/"><img src="images/logo/insta.png" height="100"></a>
-        </div>
-    </section>
-    <!-- FOOTER -->
-     <footer class="footer py-5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-lg-12 col-12">                                
-                        <p class="copyright-text text-center">Copyright &copy; 2021 Prabesh Shrestha</p>
-                    </div>
-                    
-               </div>
+  <main id="main">
+    <section class="hero section container">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Electrical & Electronics Engineering @ Texas State</div>
+          <h1>I build systems that <span class="text-accent">sense, move, and communicate.</span></h1>
+          <p class="hero-lede">I’m Prabesh Shrestha, an engineer and researcher working across robotics, embedded systems, sensing, fabrication, and connected machines.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="button button-ghost" href="mailto:prabesh.sh3.14@gmail.com">Get in touch</a>
           </div>
-     </footer>
+          <div class="hero-links" aria-label="Social links">
+            <a href="https://github.com/prabesh-shrestha" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/prabeshsh" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+          </div>
+        </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/Headroom.js"></script>
-    <script src="js/jQuery.headroom.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/custom.js"></script>
+        <aside class="hero-panel reveal reveal-delay-1" aria-label="Current profile">
+          <div class="panel-topline">
+            <span>PROFILE / 2026</span>
+            <span>San Marcos, TX</span>
+          </div>
+          <div class="system-graphic" aria-hidden="true">
+            <div class="node node-a">SENSE</div>
+            <div class="node node-b">COMPUTE</div>
+            <div class="node node-c">ACT</div>
+            <div class="trace trace-1"></div>
+            <div class="trace trace-2"></div>
+            <div class="trace trace-3"></div>
+            <div class="pulse pulse-1"></div>
+            <div class="pulse pulse-2"></div>
+          </div>
+          <div class="panel-stats">
+            <div><strong>4.0</strong><span>GPA</span></div>
+            <div><strong>ROS 2</strong><span>Robotics</span></div>
+            <div><strong>C / Rust</strong><span>Systems</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-  </body>
+    <section class="signal-strip" aria-label="Focus areas">
+      <div class="signal-track">
+        <span>ROBOTICS</span><i>•</i><span>EMBEDDED SYSTEMS</span><i>•</i><span>COMPUTER VISION</span><i>•</i><span>SENSING</span><i>•</i><span>FABRICATION</span><i>•</i><span>MACHINE INFRASTRUCTURE</span><i>•</i>
+        <span>ROBOTICS</span><i>•</i><span>EMBEDDED SYSTEMS</span><i>•</i><span>COMPUTER VISION</span><i>•</i><span>SENSING</span><i>•</i><span>FABRICATION</span><i>•</i><span>MACHINE INFRASTRUCTURE</span><i>•</i>
+      </div>
+    </section>
+
+    <section class="section container" id="work">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-kicker">01 / Selected work</span>
+          <h2>Engineering across hardware and software.</h2>
+        </div>
+        <p>Projects where the interesting work lives at the boundary between physical systems, embedded computation, and software infrastructure.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-featured reveal">
+          <a class="project-link" href="projects/octoprint-farm.html" aria-label="Read about 3D printer infrastructure"></a>
+          <div class="project-index">01</div>
+          <div class="project-visual printer-visual" aria-hidden="true">
+            <div class="rack">
+              <div class="printer-box"><span></span></div>
+              <div class="printer-box"><span></span></div>
+              <div class="printer-box"><span></span></div>
+            </div>
+            <div class="data-lines"><i></i><i></i><i></i></div>
+            <div class="server-box">OCTOPRINT / DOCKER</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>Makerspace infrastructure</span><span>2025–Present</span></div>
+            <h3>Scalable 3D-printer infrastructure</h3>
+            <p>Built and operated an OctoPrint-based printer farm with Dockerized services, custom plugins, and secure proxying behind university firewalls.</p>
+            <div class="tags"><span>OctoPrint</span><span>Docker</span><span>Linux</span><span>JavaScript</span></div>
+            <span class="text-link">View project <span aria-hidden="true">↗</span></span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-1">
+          <a class="project-link" href="projects/mars-robot.html" aria-label="Read about Makerspace Autonomous Robot"></a>
+          <div class="project-index">02</div>
+          <div class="project-visual robot-visual" aria-hidden="true">
+            <div class="lidar-ring"></div>
+            <div class="robot-body"><span class="camera-eye"></span></div>
+            <div class="wheel wheel-left"></div><div class="wheel wheel-right"></div>
+            <div class="scan-line"></div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>Autonomous robotics</span><span>2024–Present</span></div>
+            <h3>Makerspace Autonomous Robot</h3>
+            <p>ROS 2 autonomous platform using a Jetson Orin Nano, RPLiDAR A1, and ZED 2i, with responsibility for hardware integration and system bring-up.</p>
+            <div class="tags"><span>ROS 2</span><span>Jetson Orin</span><span>LiDAR</span><span>ZED 2i</span></div>
+            <span class="text-link">View project <span aria-hidden="true">↗</span></span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <a class="project-link" href="projects/bcg-data-system.html" aria-label="Read about BCG data system"></a>
+          <div class="project-index">03</div>
+          <div class="project-visual signal-visual" aria-hidden="true">
+            <svg viewBox="0 0 520 220" role="img" aria-label="Stylized biosignal waveform">
+              <path d="M0 120 L55 120 L72 112 L87 120 L118 120 L137 88 L154 156 L171 66 L190 120 L234 120 L250 114 L263 120 L302 120 L320 91 L336 151 L353 72 L372 120 L420 120 L438 110 L452 120 L520 120" fill="none" vector-effect="non-scaling-stroke" />
+            </svg>
+            <span class="signal-label">EEG / BCG</span>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>Research instrumentation</span><span>2026–Present</span></div>
+            <h3>Wireless physiological data system</h3>
+            <p>Developed ESP-based recording firmware with wireless reflashing and custom memory repartitioning, and redesigned the data-retrieval hardware schematics.</p>
+            <div class="tags"><span>ESP</span><span>Firmware</span><span>PCB</span><span>EEG / BCG</span></div>
+            <span class="text-link">View project <span aria-hidden="true">↗</span></span>
+          </div>
+        </article>
+
+        <article class="project-card reveal reveal-delay-1">
+          <a class="project-link" href="projects/agroassist.html" aria-label="Read about AgroAssist"></a>
+          <div class="project-index">04</div>
+          <div class="project-visual network-visual" aria-hidden="true">
+            <div class="network-node n1"></div><div class="network-node n2"></div><div class="network-node n3"></div><div class="network-node n4"></div>
+            <div class="network-line l1"></div><div class="network-line l2"></div><div class="network-line l3"></div>
+            <div class="cloud-core">ML</div>
+          </div>
+          <div class="project-content">
+            <div class="project-meta"><span>IoT + machine learning</span><span>2022–2024</span></div>
+            <h3>AgroAssist</h3>
+            <p>Multi-node agriculture sensing system with live soil and environmental data, cloud processing, ML recommendations, and a real-time monitoring dashboard.</p>
+            <div class="tags"><span>IoT</span><span>AWS</span><span>Azure ML</span><span>Sensors</span></div>
+            <span class="text-link">View project <span aria-hidden="true">↗</span></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-kicker">02 / Experience</span>
+            <h2>Building, researching, and shipping.</h2>
+          </div>
+          <p>Hands-on roles spanning human-subject research, industrial robotics, makerspace infrastructure, electronics, and product development.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">FEB 2026 — NOW</div>
+            <div class="timeline-main">
+              <div class="role-heading"><div><h3>Research Assistant</h3><p>Ballistic Cardiogram Lab · Texas State University</p></div><span>Research</span></div>
+              <ul>
+                <li>Conduct human-subject research using EEG and ballistocardiography.</li>
+                <li>Develop ESP-based data-recording firmware with wireless reflashing and custom memory repartitioning.</li>
+                <li>Redesign data-retrieval schematics and prepare PCB manufacturing.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">DEC 2025 — NOW</div>
+            <div class="timeline-main">
+              <div class="role-heading"><div><h3>Makerspace Student Technician</h3><p>Ingram Hall Makerspace · Texas State University</p></div><span>Engineering</span></div>
+              <ul>
+                <li>Integrate OnRobot electric and pneumatic grippers with Universal Robots industrial arms.</li>
+                <li>Deploy ROS 2 Humble with the Universal Robots driver and evaluate YOLO-based object detection.</li>
+                <li>Build and operate scalable OctoPrint printer infrastructure using Docker and custom plugins.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">SEP 2025 — NOW</div>
+            <div class="timeline-main">
+              <div class="role-heading"><div><h3>Electrical Lead — Industrial Team</h3><p>IEEE Robotics & Automation Society</p></div><span>Leadership</span></div>
+              <ul>
+                <li>Design and solder circuit boards for the MARS robot and manage power and data-bus wiring.</li>
+                <li>Develop Teensy firmware and ROS nodes for robot control.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">JAN — JUL 2025</div>
+            <div class="timeline-main">
+              <div class="role-heading"><div><h3>Product Design Lead</h3><p>Wired Circuit Pvt. Ltd. · Kathmandu, Nepal</p></div><span>Product</span></div>
+              <ul>
+                <li>Designed and commercialized four DIY robotics kits.</li>
+                <li>Authored 50+ pages of classroom technical manuals.</li>
+                <li>Mentored 20+ students; three teams won national robotics competitions.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading reveal">
+        <div>
+          <span class="section-kicker">03 / Toolkit</span>
+          <h2>Comfortable from bench to terminal.</h2>
+        </div>
+        <p>I like projects where the answer is not “hardware or software,” but both.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal"><span>01</span><h3>Robotics</h3><p>Universal Robots, UR ROS 2 driver, ROS 2 Humble, OnRobot grippers</p></article>
+        <article class="skill-card reveal reveal-delay-1"><span>02</span><h3>Embedded</h3><p>Jetson Nano / Orin, Arduino, ESP8266, ATmega328P, STM32, RP2040</p></article>
+        <article class="skill-card reveal"><span>03</span><h3>Hardware</h3><p>KiCad, SolidWorks, PCB design, soldering, oscilloscopes, multimeters</p></article>
+        <article class="skill-card reveal reveal-delay-1"><span>04</span><h3>Software</h3><p>C/C++, Python, Rust, Bash, JavaScript, Git, Linux, Docker, MATLAB</p></article>
+        <article class="skill-card reveal"><span>05</span><h3>Fabrication</h3><p>FDM 3D printing, CNC, laser cutting, arc welding, milling, lathes</p></article>
+        <article class="skill-card reveal reveal-delay-1"><span>06</span><h3>Infrastructure</h3><p>OctoPrint, Dockerized services, Linux systems, machine integration</p></article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <div class="container about-grid">
+        <div class="about-title reveal">
+          <span class="section-kicker">04 / About</span>
+          <h2>Engineering is most interesting when it leaves the screen.</h2>
+        </div>
+        <div class="about-copy reveal reveal-delay-1">
+          <p>I’m pursuing a B.S. in Electrical & Electronics Engineering at Texas State University, where I work in research, robotics, and the Ingram Hall Makerspace.</p>
+          <p>My work tends to converge on the same problem: getting real physical systems to produce useful data, make decisions, and behave reliably. That has taken me from embedded firmware and PCB design to ROS 2 robots, industrial arms, IoT networks, and printer-farm infrastructure.</p>
+          <p>I’m especially interested in robotics, sensing, distributed embedded systems, edge computing, and the infrastructure that makes fleets of machines easier to operate.</p>
+          <div class="education-card">
+            <div><span>Education</span><strong>B.S. Electrical & Electronics Engineering</strong><p>Texas State University · Expected May 2028</p></div>
+            <div class="education-stat"><strong>4.0</strong><span>GPA</span></div>
+          </div>
+          <div class="honors">President’s Honor Scholarship · President’s List · Honors College</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section container" id="contact">
+      <div class="contact-card reveal">
+        <span class="section-kicker">05 / Contact</span>
+        <h2>Have a hard engineering problem?</h2>
+        <p>I’m always interested in research, robotics, embedded systems, and ambitious hardware/software projects.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:prabesh.sh3.14@gmail.com">prabesh.sh3.14@gmail.com</a>
+          <button class="button button-ghost" id="copy-email" type="button" data-email="prabesh.sh3.14@gmail.com">Copy email</button>
+        </div>
+        <div class="contact-socials">
+          <a href="https://github.com/prabesh-shrestha" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/prabeshsh" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Prabesh Shrestha</p>
+      <p>Designed & built as a static site.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+  <script src="script.js"></script>
+</body>
 </html>
